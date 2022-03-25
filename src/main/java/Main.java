@@ -126,17 +126,27 @@ public class Main {
 //            default: System.out.println("This is not a day");
 //        }
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("You are playing a game! Press q or Q to quit");
+//        String response = scanner.next();
+//
+//        if(!response.equals("q") && !response.equals("Q")){
+//            System.out.println("You are still playing the game *pew pew*");
+//        }
+//        else{
+//            System.out.println("You quit the game");
+//        }
 
-        System.out.println("You are playing a game! Press q or Q to quit");
-        String response = scanner.next();
 
-        if(!response.equals("q") && !response.equals("Q")){
-            System.out.println("You are still playing the game *pew pew*");
-        }
-        else{
-            System.out.println("You quit the game");
-        }
+         Scanner scanner = new Scanner(System.in);
 
+         String name = "";
+
+         do {
+             System.out.print("Enter your name: ");
+             name = scanner.nextLine();
+         } while(name.isBlank() );
+        System.out.println("Hello "+name);
     }
 }
