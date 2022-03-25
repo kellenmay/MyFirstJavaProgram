@@ -7,6 +7,6 @@ public class Main {
         int x;
         x = 123;
         System.out.println(x);
-
+        System.out.println(x+x);
     }
 }
