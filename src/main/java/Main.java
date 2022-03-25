@@ -95,16 +95,35 @@ public class Main {
 //        System.out.println(z);
 
 
-        int age = 75;
+//        int age = 75;
+//
+//        if(age>=18 && age<75){
+//            System.out.println("You are an Adult!");
+//        }
+//        else if(age>=75) {
+//            System.out.println("Ok Boomer");
+//        }
+//        else{
+//            System.out.println("You are NOT an Adult");
+//        }
 
-        if(age>=18 && age<75){
-            System.out.println("You are an Adult!");
-        }
-        else if(age>=75) {
-            System.out.println("Ok Boomer");
-        }
-        else{
-            System.out.println("You are NOT an Adult");
+        String day = "Pizza";
+        switch(day){
+            case "Sunday": System.out.println("It is Sunday!");
+            break;
+            case "Monday": System.out.println("It is Monday!");
+            break;
+            case "Tuesday": System.out.println("It is Tuesday!");
+            break;
+            case "Wednesday": System.out.println("It is Wednesday!");
+            break;
+            case "Thursday": System.out.println("It is Thursday!");
+            break;
+            case "Friday": System.out.println("It is Friday!");
+            break;
+            case "Saturday": System.out.println("It is Saturday!");
+            break;
+            default: System.out.println("This is not a day");
         }
 
     }
