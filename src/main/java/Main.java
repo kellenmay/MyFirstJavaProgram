@@ -1,5 +1,6 @@
 import java.nio.file.FileSystemNotFoundException;
 import java.util.*;
+import javax.sound.midi.SysexMessage;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.synth.SynthUI;
 
@@ -80,20 +81,31 @@ public class Main {
 //        y = scanner.nextDouble();
 //
 //        z = Math.sqrt((x*x)+(y*y));
-//
+
 //        System.out.println("The hypotenuse is : "+z);
-//
+
 //        scanner.close();
+//
+//        Random random = new Random();
+//
+//        int x = random.nextInt(6)+1;
+//        double y = random.nextDouble();
+//        boolean z = random.nextBoolean();
+//
+//        System.out.println(z);
 
-        Random random = new Random();
 
-        int x = random.nextInt(6)+1;
-        double y = random.nextDouble();
-        boolean z = random.nextBoolean();
+        int age = 75;
 
-        System.out.println(z);
-
-
+        if(age>=18 && age<75){
+            System.out.println("You are an Adult!");
+        }
+        else if(age>=75) {
+            System.out.println("Ok Boomer");
+        }
+        else{
+            System.out.println("You are NOT an Adult");
+        }
 
     }
 }
