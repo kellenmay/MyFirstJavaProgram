@@ -69,21 +69,31 @@ public class Main {
 //
 //        System.out.println(z);
 
-        double x;
-        double y;
-        double z;
+//        double x;
+//        double y;
+//        double z;
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter side x: ");
+//        x = scanner.nextDouble();
+//        System.out.println("Enter side y: ");
+//        y = scanner.nextDouble();
+//
+//        z = Math.sqrt((x*x)+(y*y));
+//
+//        System.out.println("The hypotenuse is : "+z);
+//
+//        scanner.close();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter side x: ");
-        x = scanner.nextDouble();
-        System.out.println("Enter side y: ");
-        y = scanner.nextDouble();
+        Random random = new Random();
 
-        z = Math.sqrt((x*x)+(y*y));
+        int x = random.nextInt(6)+1;
+        double y = random.nextDouble();
+        boolean z = random.nextBoolean();
 
-        System.out.println("The hypotenuse is : "+z);
+        System.out.println(z);
 
-        scanner.close();
+
 
     }
 }
