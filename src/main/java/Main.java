@@ -6,7 +6,10 @@ public class Main {
 
         int x;
         x = 123;
+        int y;
+        y = 134
         System.out.println(x);
         System.out.println(x+x);
+        System.out.println(x+y);
     }
 }
