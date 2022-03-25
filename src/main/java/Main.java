@@ -1,4 +1,5 @@
 import java.util.*;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args){
@@ -44,15 +45,20 @@ public class Main {
 //        System.out.println("You are "+age+" years old");
 //        System.out.println("You enjoy eating "+food);
 
-        double friends = 10;
-        friends--;
-        System.out.println(friends);
-        friends = (double) friends % 3;
-        System.out.println(friends);
-        friends++;
-        friends = friends % 3;
-        System.out.println(friends);
+//        double friends = 10;
+//        friends--;
+//        System.out.println(friends);
+//        friends = (double) friends % 3;
+//        System.out.println(friends);
+//        friends++;
+//        friends = friends % 3;
+//        System.out.println(friends);
 
+        String name = JOptionPane.showInputDialog("Enter your name");
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+
+        JOptionPane.showMessageDialog(null, "Hello "+name+". You are "+age+ " years old and you are "+height+" cm tall.");
 
     }
 }
