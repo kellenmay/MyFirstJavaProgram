@@ -1,5 +1,7 @@
+import java.nio.file.FileSystemNotFoundException;
 import java.util.*;
 import javax.swing.JOptionPane;
+import javax.swing.plaf.synth.SynthUI;
 
 public class Main {
     public static void main(String[] args){
@@ -54,11 +56,34 @@ public class Main {
 //        friends = friends % 3;
 //        System.out.println(friends);
 
-        String name = JOptionPane.showInputDialog("Enter your name");
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+//        String name = JOptionPane.showInputDialog("Enter your name");
+//        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+//        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+//
+//        JOptionPane.showMessageDialog(null, "Hello "+name+". You are "+age+ " years old and you are "+height+" cm tall.");
 
-        JOptionPane.showMessageDialog(null, "Hello "+name+". You are "+age+ " years old and you are "+height+" cm tall.");
+//        double x = 3.14;
+//        double y = -10;
+//
+//        double z = Math.abs(y);
+//
+//        System.out.println(z);
+
+        double x;
+        double y;
+        double z;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter side x: ");
+        x = scanner.nextDouble();
+        System.out.println("Enter side y: ");
+        y = scanner.nextDouble();
+
+        z = Math.sqrt((x*x)+(y*y));
+
+        System.out.println("The hypotenuse is : "+z);
+
+        scanner.close();
 
     }
 }
