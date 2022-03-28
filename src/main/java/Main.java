@@ -179,23 +179,35 @@ public class Main {
 //            }
 //        }
 
-        String[] cars = {"Camaro", "Corvette", "Tesla"};
-        System.out.println(cars[0]);
+//        String[] cars = {"Camaro", "Corvette", "Tesla"};
+//        System.out.println(cars[0]);
+//
+//        cars[0] = "Mustang";
+//        System.out.println(cars[0]);
+//
+//        String trucks[] = new String[3];
+//        trucks[0] = "Avalanche";
+//        trucks[1] = "Tahoe";
+//        trucks[2] = "Ram";
+//
+//        System.out.println(trucks);
+//
+//        for(int i=0; i<=trucks.length; i++){
+//            System.out.println(trucks[i]);
+//        }
 
-        cars[0] = "Mustang";
-        System.out.println(cars[0]);
+        String[][] cars= {
+                {"Camaro", "Corvette", "Silverado"},
+                {"Mustang", "Ranger", "F-150"},
+                {"Ferrari", "Lambo", "Tesla"}
+        };
 
-        String trucks[] = new String[3];
-        trucks[0] = "Avalanche";
-        trucks[1] = "Tahoe";
-        trucks[2] = "Ram";
-
-        System.out.println(trucks);
-
-        for(int i=0; i<=trucks.length; i++){
-            System.out.println(trucks[i]);
+        for(int i=0; i< cars.length; i++){
+            System.out.println();
+            for(int j=0; j<cars[i].length; j++){
+                System.out.print(cars[i][j]+" ");
+            }
         }
-
 
 
     }
