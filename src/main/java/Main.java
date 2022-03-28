@@ -1,11 +1,17 @@
 import java.nio.file.FileSystemNotFoundException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import javax.sound.midi.SysexMessage;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.synth.SynthUI;
 
 public class Main {
-    public static void main(String[] args){
+    public static <LambdaTest> void main(String[] args){
 //        System.out.println("\"Hello World\"");
 //        System.out.println("Hello World");
 //        System.out.println("Hello World");
@@ -139,14 +145,16 @@ public class Main {
 //        }
 
 
-         Scanner scanner = new Scanner(System.in);
+//         Scanner scanner = new Scanner(System.in);
+//
+//         String name = "";
+//
+//         do {
+//             System.out.print("Enter your name: ");
+//             name = scanner.nextLine();
+//         } while(name.isBlank() );
+//        System.out.println("Hello "+name);
 
-         String name = "";
 
-         do {
-             System.out.print("Enter your name: ");
-             name = scanner.nextLine();
-         } while(name.isBlank() );
-        System.out.println("Hello "+name);
     }
 }
