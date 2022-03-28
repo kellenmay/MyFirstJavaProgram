@@ -155,6 +155,9 @@ public class Main {
 //         } while(name.isBlank() );
 //        System.out.println("Hello "+name);
 
-
+        for(int i = 0; i<=10; i++){
+            System.out.println(i);
+        }
+        System.out.println("All done!");
     }
 }
