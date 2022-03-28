@@ -160,25 +160,41 @@ public class Main {
 //        }
 //        System.out.println("All done!");
 
-        Scanner scanner = new Scanner(System.in);
-        int rows;
-        int columns;
-        String symbol = "";
+//        Scanner scanner = new Scanner(System.in);
+//        int rows;
+//        int columns;
+//        String symbol = "";
+//
+//        System.out.println("Enter # of rows: ");
+//        rows = scanner.nextInt();
+//        System.out.println("Enter # of columns: ");
+//        columns = scanner.nextInt();
+//        System.out.println("Enter a symbol to use: ");
+//        symbol = scanner.next();
+//
+//        for(int i=1; i<=rows; i++){
+//            System.out.println();
+//            for(int j = 1; j<=columns; j++){
+//                System.out.print(symbol);
+//            }
+//        }
 
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
-        System.out.println("Enter # of columns: ");
-        columns = scanner.nextInt();
-        System.out.println("Enter a symbol to use: ");
-        symbol = scanner.next();
+        String[] cars = {"Camaro", "Corvette", "Tesla"};
+        System.out.println(cars[0]);
 
-        for(int i=1; i<=rows; i++){
-            System.out.println();
-            for(int j = 1; j<=columns; j++){
-                System.out.print(symbol);
-            }
+        cars[0] = "Mustang";
+        System.out.println(cars[0]);
+
+        String trucks[] = new String[3];
+        trucks[0] = "Avalanche";
+        trucks[1] = "Tahoe";
+        trucks[2] = "Ram";
+
+        System.out.println(trucks);
+
+        for(int i=0; i<=trucks.length; i++){
+            System.out.println(trucks[i]);
         }
-
 
 
 
